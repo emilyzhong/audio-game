@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LocationTrigger : MonoBehaviour
 {
-    public AudioClip audio;
+    public AudioClip audioFile;
 
     private AudioSource source;
 
@@ -22,12 +22,12 @@ public class LocationTrigger : MonoBehaviour
     // Update is called once per frame
     // void Update()
     // {
-        
+
     // }
 
     private void OnTriggerEnter(Collider collision)
     {
         Debug.Log("Entered!");
-        source.PlayOneShot(audio, 1);
+        source.PlayOneShot(audioFile, 1);
     }
 }
