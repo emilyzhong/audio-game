@@ -20,10 +20,10 @@ public class LocationTrigger : MonoBehaviour
     }
 
     // Update is called once per frame
-    // void Update()
-    // {
-
-    // }
+    void Update()
+    {
+        Debug.Log("Updated");
+    }
 
     private void OnTriggerEnter(Collider collision)
     {
